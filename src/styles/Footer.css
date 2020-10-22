@@ -1,0 +1,75 @@
+.footer {
+  background-color: #1f1e1e;
+  color: #fff;
+}
+
+.footer > div {
+  position: relative;
+  margin: 0 auto;
+  width: 85vw;
+  height: 2px;
+  background-color: #fff;
+}
+
+.SoMeF {
+  width: 80vw;
+  padding: 0px;
+  margin: 16px auto;
+
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.SoMeF li {
+  margin: 0px;
+  list-style: none;
+  color: orange;
+  font-size: 0rem;
+  transition: 0.75s ease;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SoMeF a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.linkedin {
+  background-image: url(./../assets/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url(./../assets/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.messenger {
+  background-image: url(./../assets/messenger.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.emailf {
+  background-image: url(./../assets/email.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer > p {
+  width: 100vw;
+  font-size: 1rem;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}

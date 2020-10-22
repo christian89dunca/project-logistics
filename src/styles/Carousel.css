@@ -1,0 +1,60 @@
+.carousel {
+  position: relative;
+  width: 250px;
+  min-height: 60vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.slide {
+  border: 1px solid #333;
+  background-color: #fff;
+  position: relative;
+  min-width: 100%;
+  min-height: 60vh;
+  margin: auto;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.imgStyles {
+  max-width: 400px;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.card-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* BUTTONS <  LEFT + Right > */
+
+.btn-carousel {
+  background-color: rgba(0, 0, 0, 0);
+  color: #777;
+  border: none;
+  position: relative;
+  font-size: 1.5rem;
+  /* width: 10%; */
+  height: 100px;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-carousel:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  transition: 0.4s;
+}
+
+.btn-carousel > i {
+  padding: 20px;
+}

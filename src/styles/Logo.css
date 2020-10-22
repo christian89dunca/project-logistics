@@ -1,0 +1,36 @@
+.logo {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+}
+
+.logo h1,
+.logo p {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.logo-small {
+  position: relative;
+  padding: 1.5rem;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.logo-small h1,
+.logo-small p {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}

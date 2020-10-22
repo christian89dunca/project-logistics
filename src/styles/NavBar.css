@@ -1,0 +1,202 @@
+.menu-wrap {
+  position: fixed;
+  width: 62px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hammburger line */
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: inherit;
+}
+
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+/*wiggle when hover */
+
+.menu-wrap .toggler:hover + .hamburger > div:before {
+  transform: translateY(-1px);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .toggler:hover + .hamburger > div:after {
+  transform: translateY(1px);
+  transition: all 0.4s ease;
+}
+
+/* toggler animate */
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* transition to X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/*rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* show menu */
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: -2;
+}
+
+.menu-wrap .menu > div {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu ul {
+  padding: 0px;
+}
+
+.menu-wrap .menu .nav li,
+.menu-wrap .menu .nav li * {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  transition: 0.75s ease;
+  cursor: pointer;
+}
+
+.menu-wrap .menu .SoMe li {
+  margin: 0px;
+  list-style: none;
+  color: orange;
+  font-size: 0rem;
+  padding: 1rem;
+  transition: 0.75s ease;
+  display: inline;
+}
+
+.menu-wrap .menu .SoMe a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.linkedin {
+  background-image: url(./../assets/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url(./../assets/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.messenger {
+  background-image: url(./../assets/messenger.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.email {
+  background-image: url(./../assets/email.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+}
